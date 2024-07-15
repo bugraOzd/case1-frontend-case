@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+      },
       colors: {
         "col-primary": "#78350F",
         "col-light": "#FFFFF",

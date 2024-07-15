@@ -10,7 +10,7 @@ const ItemCard = ({
   description: string;
 }) => {
   return (
-    <div className="w-[24.4rem] border border-black rounded-xl shadow-light-xl">
+    <div className="bg-[#0F172A] w-[24.4rem] rounded-xl shadow-light-xl">
       <img
         className="object-cover rounded-t-lg w-full h-[13rem]"
         src={imageSrc}
