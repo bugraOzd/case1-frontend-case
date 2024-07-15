@@ -1,0 +1,12 @@
+.triangle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72%;
+  background-color: #FEF3C7;
+  transform: skewY(-22deg);
+  transform-origin: bottom right;
+  z-index: -100;
+}
