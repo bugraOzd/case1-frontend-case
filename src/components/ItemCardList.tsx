@@ -1,18 +1,17 @@
 import ItemCard from "./ItemCard";
+import Button from "./Button";
 
 const ItemCardList = ({ products }: { products: any[] }) => {
   return (
-    <section className="relative bg-[#0F172A] text-white py-14 px-24 -z-10">
+    <section className="relative bg-[#0F172A] text-white py-14 px-24">
       <div className="flex justify-between items-center lg:flex-row flex-col">
         <h3 className="font-bold text-4xl">The best of the best</h3>
-        <button className="border-2 border-white rounded-lg px-8 py-2">
-          Sign up now
-        </button>
+        <Button text="Sign up now" color="fffff" />
       </div>
 
       <div className="relative flex justify-center items-center">
         <svg
-          className="absolute -z-10"
+          className="absolute z-10"
           width="1358"
           height="527"
           viewBox="0 0 1358 527"
@@ -64,7 +63,7 @@ const ItemCardList = ({ products }: { products: any[] }) => {
           />
         </svg>
 
-        <div className="py-14 flex justify-between flex-wrap gap-10 lg:flex-nowrap">
+        <div className="py-14 flex justify-between flex-wrap gap-10 lg:flex-nowrap z-20">
           {products.map((item) => (
             <ItemCard key={item.imageSrc} {...item} />
           ))}

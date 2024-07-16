@@ -2,7 +2,7 @@ import { features } from "../shared/features";
 import FeatureList from "./FeatureList";
 import { CirclePlay } from "lucide-react";
 import "./Hero.css";
-import SignUpButton from "./SignUpButton";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
             </p>
 
             <div className="flex gap-5">
-              <SignUpButton />
+              <Button text="Sign up now" />
               <button>
                 <span className="flex gap-2 text-col-primary">
                   <CirclePlay />

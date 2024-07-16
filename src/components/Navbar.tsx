@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SignUpButton from "./SignUpButton";
+import Button from "./Button";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
         <button className="block md:inline-block">Pricing</button>
         <button className="block md:inline-block">Resources</button>
         <button className="block md:inline-block">Log In</button>
-        <SignUpButton className="block md:inline-block" />
+        <Button text="Sign up now" className="block md:inline-block" />
       </div>
     </nav>
   );
