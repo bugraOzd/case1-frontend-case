@@ -6,6 +6,16 @@ import {
   SlidersVertical,
   TvMinimal,
 } from "lucide-react";
+import BrowserContainer from "./BrowserContainer";
+
+const featureItems = [
+  { icon: Search, text: "Cras eget" },
+  { icon: ShieldCheck, text: "Cras eget" },
+  { icon: Rocket, text: "Dolor fringilla" },
+  { icon: TvMinimal, text: "Amet, fringilla" },
+  { icon: Podcast, text: "Amet nibh" },
+  { icon: SlidersVertical, text: "Sed velit" },
+];
 
 const Collection = () => {
   return (
@@ -18,27 +28,51 @@ const Collection = () => {
         commodo consequat.
       </p>
 
-      <div className="pt-16">
-        {[
-          { icon: Search, text: "Cras eget" },
-          { icon: ShieldCheck, text: "Cras eget" },
-          { icon: Rocket, text: "Dolor fringilla" },
-          { icon: TvMinimal, text: "Amet, fringilla" },
-          { icon: Podcast, text: "Amet nibh" },
-          { icon: SlidersVertical, text: "Sed velit" },
-        ].map((item, index) => (
-          <button
-            key={index}
-            className="text-lg px-5 py-3 flex items-center text-gray-600 rounded-lg hover:shadow-lg"
-          >
-            <item.icon size={24} className="mr-3" />
-            <span>{item.text}</span>
-          </button>
-        ))}
+      <div className="pt-16 pb-28 flex flex-col md:flex-row space-x-8 gap-20">
+        <div className="space-y-4 flex flex-row md:flex-col">
+          {featureItems.map((item, index) => (
+            <button
+              key={index}
+              className="text-lg px-5 py-3 flex items-center text-gray-600 rounded-lg hover:shadow-lg"
+            >
+              <item.icon size={24} className="mr-3" />
+              <span>{item.text}</span>
+            </button>
+          ))}
+        </div>
+
+        <div className="relative flex space-x-4">
+          <div className="absolute">
+            <BrowserContainer height="20rem" width="38rem">
+              <img
+                src="src/assets/sneaker-3.png"
+                alt="Sneakers"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+              />
+            </BrowserContainer>
+          </div>
+
+          <div className="absolute top-1/4 left-20">
+            <BrowserContainer height="20rem" width="38rem">
+              <img
+                src="src/assets/sneaker-4.jpg"
+                alt="Sneakers"
+                className="w-full h-full object-cover rounded-b-lg shadow-lg"
+              />
+              <div className="absolute -right-20 top-10 w-52 h-52 border-4 rounded-xl shadow-2xl">
+                <img
+                  src="src/assets/sneaker-cover-1.jpg"
+                  alt="Sneakers"
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                />
+              </div>
+            </BrowserContainer>
+          </div>
+        </div>
       </div>
 
       <svg
-        className="absolute w-full inset-0 top-44 -z-10"
+        className="absolute w-full inset-0 top-0 bottom-0 left-0 right-0 h-[120%] -z-10"
         width="1440"
         height="684"
         viewBox="0 0 1440 684"
@@ -58,6 +92,11 @@ const Collection = () => {
           fill="#78350F"
         />
       </svg>
+
+      {/* <div className="bg-[#78350F]">
+        <h1>11,658,467</h1>
+        <h2>Shoes Collected</h2>
+      </div> */}
     </section>
   );
 };

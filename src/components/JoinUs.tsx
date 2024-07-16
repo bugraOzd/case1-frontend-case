@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import Button from "./Button";
 import ReactPlayer from "react-player/youtube";
+import BrowserContainer from "./BrowserContainer";
 
 const JoinUs = () => {
   return (
@@ -91,12 +92,14 @@ const JoinUs = () => {
             />
           </svg>
 
-          <ReactPlayer
-            style={{ borderRadius: "20px" }}
-            width="430px"
-            height="260px"
-            url="https://www.youtube.com/watch?v=edB-jhCiWZg&t=1s"
-          />
+          <BrowserContainer width="27rem" height="19rem">
+            <ReactPlayer
+              style={{ borderRadius: "20px" }}
+              width="100%"
+              height="100%"
+              url="https://www.youtube.com/watch?v=edB-jhCiWZg&t=1s"
+            />
+          </BrowserContainer>
         </div>
       </div>
     </section>
