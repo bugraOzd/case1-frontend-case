@@ -24,7 +24,9 @@ const FeatureItem = ({
         ></div>
       </div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600">{description}</p>
+      <p className="text-sm text-gray-600 text-center lg:text-start">
+        {description}
+      </p>
     </div>
   );
 };
