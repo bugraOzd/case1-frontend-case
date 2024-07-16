@@ -1,17 +1,27 @@
-const Button = ({
+interface ButtonProps {
+  text: string;
+  color?: string;
+  borderColor?: string;
+  hoverColor?: string;
+}
+
+const Button: React.FC<ButtonProps> = ({
   text,
   color = "#78350F",
+  borderColor = "#78350F",
   hoverColor = "#FEF3C7",
-  ...props
-}: {
-  text?: string;
-  color?: string;
-  hoverColor?: string;
 }) => {
   return (
     <button
-      {...props}
-      className={`border-2 text-[${color}] border-[${color}] rounded-lg px-8 py-2 hover:bg-[${hoverColor}]`}
+      className={`px-8 py-2 rounded transition duration-200 ease-in-out`}
+      style={{
+        color: color,
+        borderColor: borderColor,
+        borderWidth: "2px",
+        borderStyle: "solid",
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverColor)}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "")}
     >
       {text}
     </button>

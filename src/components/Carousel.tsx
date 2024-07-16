@@ -44,13 +44,13 @@ const TestimonialCarousel = () => {
         <div className="flex space-x-4">
           <button
             onClick={handlePrev}
-            className="p-2 rounded-full border-2 border-col-primary bg-white text-col-primary hover:bg-gray-100"
+            className="p-2 rounded-full border-2 border-col-primary bg-white text-col-primary hover:bg-col-hover"
           >
             <ArrowLeft size={24} />
           </button>
           <button
             onClick={handleNext}
-            className="p-2 rounded-full border-2 border-col-primary bg-white text-col-primary hover:bg-gray-100"
+            className="p-2 rounded-full border-2 border-col-primary bg-white text-col-primary hover:bg-col-hover"
           >
             <ArrowRight size={24} />
           </button>

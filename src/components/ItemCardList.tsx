@@ -6,7 +6,12 @@ const ItemCardList = ({ products }: { products: any[] }) => {
     <section className="relative bg-[#0F172A] text-white py-14 px-24">
       <div className="flex justify-between items-center lg:flex-row flex-col">
         <h3 className="font-bold text-4xl">The best of the best</h3>
-        <Button text="Sign up now" color="fffff" />
+        <Button
+          text="Sign up now"
+          color="fffff"
+          borderColor="fffff"
+          hoverColor="#1e2c4f"
+        />
       </div>
 
       <div className="relative flex justify-center items-center">

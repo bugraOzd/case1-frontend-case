@@ -9,6 +9,7 @@ export default {
       colors: {
         "col-primary": "#78350F",
         "col-light": "#FFFFF",
+        "col-hover": "#FEF3C7",
       },
       boxShadow: {
         "light-xl": "0 15px 15px rgba(225, 225, 225, 0.25)",
