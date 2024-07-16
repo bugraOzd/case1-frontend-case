@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`px-8 py-2 rounded transition duration-200 ease-in-out`}
+      className={`px-8 py-2 rounded-lg transition duration-200 ease-in-out`}
       style={{
         color: color,
         borderColor: borderColor,

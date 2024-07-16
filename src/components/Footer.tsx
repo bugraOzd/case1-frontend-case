@@ -7,7 +7,7 @@ import {
   Youtube,
 } from "lucide-react";
 import LinkList from "./LinkList";
-import { footerItems } from "../shared/footerItems";
+import { footerItems } from "../shared/data/footerItems";
 
 const Footer = () => {
   return (

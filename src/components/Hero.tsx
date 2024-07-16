@@ -1,4 +1,4 @@
-import { features } from "../shared/features";
+import { features } from "../shared/data/features";
 import FeatureList from "./FeatureList";
 import { CirclePlay } from "lucide-react";
 import "./Hero.css";

@@ -4,7 +4,7 @@ import Button from "./Button";
 const ItemCardList = ({ products }: { products: any[] }) => {
   return (
     <section className="relative bg-[#0F172A] text-white py-14 px-24">
-      <div className="flex justify-between items-center lg:flex-row flex-col">
+      <div className="flex justify-between items-center lg:flex-row flex-col text-center">
         <h3 className="font-bold text-4xl">The best of the best</h3>
         <Button
           text="Sign up now"
@@ -22,6 +22,7 @@ const ItemCardList = ({ products }: { products: any[] }) => {
           viewBox="0 0 1358 527"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
         >
           <rect
             opacity="0.75"
