@@ -74,7 +74,7 @@ const Collection = () => {
       </div>
 
       <svg
-        className="absolute w-full inset-0 top-0 bottom-0 left-0 right-0 h-[120%] -z-10"
+        className="absolute w-full inset-0 top-0 bottom-0 left-0 right-0 h-[130%] -z-10"
         width="1440"
         height="684"
         viewBox="0 0 1440 684"
@@ -94,11 +94,6 @@ const Collection = () => {
           fill="#78350F"
         />
       </svg>
-
-      {/* <div className="bg-[#78350F]">
-        <h1>11,658,467</h1>
-        <h2>Shoes Collected</h2>
-      </div> */}
     </section>
   );
 };

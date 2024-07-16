@@ -8,6 +8,7 @@ import Carousel from "./components/Carousel";
 
 import Footer from "./components/Footer";
 import Collection from "./components/Collection";
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <JoinUs />
       <Carousel />
       <Collection />
+      <Map />
       <Footer />
     </main>
   );
