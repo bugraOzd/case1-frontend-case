@@ -13,7 +13,7 @@ const Hero = () => {
           id="hero"
           className="py-24 px-24 flex flex-wrap md:flex-nowrap gap-10"
         >
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 text-center md:text-start">
             <h1 className="font-extrabold text-[4.2rem]">
               Collectible Sneakers
             </h1>

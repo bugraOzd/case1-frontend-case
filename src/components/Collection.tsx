@@ -19,21 +19,23 @@ const featureItems = [
 
 const Collection = () => {
   return (
-    <section className="relative py-28 px-24">
-      <h3 className="pb-8 font-bold text-4xl">Grow your collection</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
+    <section className="relative py-28 px-16 md:px-24">
+      <div className="text-center md:text-start">
+        <h3 className="pb-8 font-bold text-4xl">Grow your collection</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
 
       <div className="pt-16 pb-28 flex flex-col md:flex-row space-x-8 gap-20">
         <div className="space-y-4 flex flex-row md:flex-col">
           {featureItems.map((item, index) => (
             <button
               key={index}
-              className="text-lg px-5 py-3 flex items-center text-gray-600 rounded-lg hover:shadow-lg"
+              className="text-nowrap md:text-lg px-5 py-3 flex items-center text-gray-600 rounded-lg hover:shadow-lg"
             >
               <item.icon size={24} className="mr-3" />
               <span>{item.text}</span>

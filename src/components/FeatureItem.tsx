@@ -8,7 +8,7 @@ const FeatureItem = ({
   description: string;
 }) => {
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-center md:items-start md:justify-center">
       <div className="relative mb-4">
         <Icon className="w-8 h-8 text-brown-600" />
         <div

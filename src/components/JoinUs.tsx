@@ -6,8 +6,8 @@ import BrowserContainer from "./BrowserContainer";
 const JoinUs = () => {
   return (
     <section className="py-[12rem] px-24">
-      <div className="py-20 px-14 flex justify-between flex-wrap md:flex-nowrap items-center shadow-xl rounded-2xl">
-        <div className="flex flex-col gap-8">
+      <div className=" py-14 md:py-20 px-14 flex justify-between flex-wrap md:flex-nowrap items-center shadow-xl rounded-2xl">
+        <div className="flex flex-col gap-8 text-center md:text-start">
           <h3 className="font-bold text-4xl">Why join us</h3>
 
           <ul>
