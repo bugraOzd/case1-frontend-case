@@ -65,7 +65,8 @@ const TestimonialCarousel = () => {
         </div>
       </div>
 
-      <div className="bg-[#FDE68A] p-4 md:p-8 rounded-lg">
+      <div className="relative flex justify-center">
+        <div className="bg-[#FDE68A] w-[93vw] h-[20rem] -top-5 absolute -z-10"></div>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {visibleTestimonials.map((testimonial, index) => (

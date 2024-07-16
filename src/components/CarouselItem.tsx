@@ -16,7 +16,7 @@ const CarouselItem = ({
   role,
 }: CarouselItem) => {
   return (
-    <div className="bg-white border border-[#E2E8F0] rounded-lg p-6 flex flex-col justify-between h-[20rem] shadow-lg hover:shadow-2xl">
+    <div className="bg-white border border-[#E2E8F0] rounded-2xl p-6 flex flex-col justify-between h-[20rem] w-[22rem] lg:w-[25rem] shadow-lg hover:shadow-2xl">
       <div>
         <div className="flex items-center mb-4">
           <span className="text-2xl mr-2">{logo}</span>
